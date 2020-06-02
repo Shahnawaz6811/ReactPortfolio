@@ -1,14 +1,14 @@
 import React from "react";
 import "./Portfolio.scss";
 const projects = require("../../data/portfolio.json");
-console.log(projects);
+// console.log(projects);
 const Portfolio = () => {
   return (
     <section id="works">
       <h1>Something i have built.</h1>
       <div id="wrapper">
         {projects.map((project, index) => (
-          <div className={`item ${index % 2 === 0 ? "even" : ""}`}>
+          <div key={index} className={`item ${index % 2 === 0 ? "even" : ""}`}>
             <div className="img-container">
               <img src={project.image_src} alt={project.title} />
             </div>
@@ -20,8 +20,8 @@ const Portfolio = () => {
               </div>
               <div id="footer">
                 <div id="tech">
-                  {project.tech.map((tech) => (
-                    <span>{tech}</span>
+                  {project.tech.map((tech,index) => (
+                    <span key={index}>{tech}</span>
                   ))}
                   {/* <span>ReactJS</span> ·<span>GraphQL</span> ·
                   <span>Github API</span> */}

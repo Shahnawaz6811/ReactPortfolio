@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import "./Header.scss";
-import Nav from "./Nav";
 const Header = ({ socials = [] }) => {
   const [isNavOpen, setNavOpen] = useState(false);
   const name = useState("Shahnawaz")[0];
-  const city = "Delhi";
 
   return (
     <header id="header">
@@ -19,9 +17,9 @@ const Header = ({ socials = [] }) => {
         }}
       >
         {" "}
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
       </div>
 
       <div className={`main_nav ${isNavOpen ? "open-nav sticky" : "sticky"}`}>
@@ -52,6 +50,7 @@ const Header = ({ socials = [] }) => {
               <a
                 href="https://drive.google.com/file/d/1v5FoiB__7Q5dRMOWtbsjlFOTrOJp9FLD/view?usp=sharing"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Resume
               </a>

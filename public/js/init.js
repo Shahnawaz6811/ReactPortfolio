@@ -37,7 +37,6 @@
 jQuery(document).ready(function ($) {
   var sections = $("section");
   var navigation_links = $(".main_nav a");
-  console.log("links: ", sections);
 
   sections.waypoint({
     handler: function (event, direction) {
@@ -45,7 +44,6 @@ jQuery(document).ready(function ($) {
 
       active_section = $(this);
       if (direction === "up") active_section = active_section.prev();
-      console.log("acitve: ", active_section);
       var active_link = $(
         '.main_nav a[href="#' + active_section.attr("id") + '"]'
       );
@@ -190,7 +188,6 @@ fade($(".quoteLoop > .quote").first());
 
 $(window).scroll(function () {
   if ($(window).scrollTop() > 300) {
-    console.log("scroll");
 
     $(".main_nav").addClass("sticky");
   } else {
@@ -210,7 +207,6 @@ $(".mobile-toggle").click(function () {
 });
 
 $(".main_nav a").click(function () {
-  console.log("click");
   if ($(".main_nav").hasClass("open-nav")) {
     $(".navigation").removeClass("open-nav");
     $(".main_nav").removeClass("open-nav");

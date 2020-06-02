@@ -2,18 +2,18 @@ import React from "react";
 import "./About.scss";
 
 const About = () => {
-  var name = "Shahnawaz Khan";
-  var profilepic = "images/profilepic.jpeg";
-  var bio =
-    "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.";
-  var street = "Shaheen Bagh,Okhla";
-  var city = "New Delhi";
-  var state = "Delhi";
-  var zip = "110025";
-  var phone = "8882068724";
-  var email = "nawazkhan654321@gmail.com";
-  var resumeDownload =
-    "https://drive.google.com/file/d/1v5FoiB__7Q5dRMOWtbsjlFOTrOJp9FLD/view?usp=sharing";
+  // var name = "Shahnawaz Khan";
+  // var profilepic = "images/profilepic.jpeg";
+  // var bio =
+  //   "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.";
+  // var street = "Shaheen Bagh,Okhla";
+  // var city = "New Delhi";
+  // var state = "Delhi";
+  // var zip = "110025";
+  // var phone = "8882068724";
+  // var email = "nawazkhan654321@gmail.com";
+  // var resumeDownload =
+  //   "https://drive.google.com/file/d/1v5FoiB__7Q5dRMOWtbsjlFOTrOJp9FLD/view?usp=sharing";
 
   return (
     <section id="about">

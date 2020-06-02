@@ -2,14 +2,7 @@ import React from "react";
 import SkillsTabs from "../portfolio/SkillsTab";
 import "./Resume.scss";
 const Resume = (props) => {
-  var skillmessage = "";
-  const works = [
-    {
-      company: "WDMtech",
-      years: "2018",
-      description: "",
-    },
-  ];
+
 
   return (
     <section  id="experience">
@@ -45,7 +38,6 @@ const Resume = (props) => {
 
             <li>
               <time>2020</time>
-              <h4></h4>
               <p id="description">
                 {/* Currently working at WDM technologies as Web and App Developer */}
               </p>

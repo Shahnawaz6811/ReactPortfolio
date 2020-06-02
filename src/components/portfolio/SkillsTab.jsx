@@ -3,7 +3,6 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import ProgressBar from "react-animated-progress-bar";
 import "react-tabs/style/react-tabs.css";
 let skills = require("data/skills");
-console.log(skills);
 
 const SkillProgress = ({ progress }) => {
   return (
@@ -29,7 +28,7 @@ const SkillProgress = ({ progress }) => {
 };
 
 export default () => {
- 
+
 
   return (
     <Tabs>
@@ -41,8 +40,8 @@ export default () => {
 
       <TabPanel>
         <div>
-          {skills.frontend.map((skill) => (
-            <div className="skill">
+          {skills.frontend.map((skill,index) => (
+            <div className="skill" key={index}>
               <div className="skill-name">{skill.name}</div>
               <SkillProgress progress={skill.per} />
             </div>
@@ -51,8 +50,8 @@ export default () => {
       </TabPanel>
       <TabPanel>
         <div>
-          {skills.backend.map((skill) => (
-            <div className="skill">
+          {skills.backend.map((skill,index) => (
+            <div className="skill" key={index}>
               <div className="skill-name">{skill.name}</div>
               <SkillProgress progress={skill.per} />
             </div>
@@ -61,8 +60,8 @@ export default () => {
       </TabPanel>
       <TabPanel>
         <div>
-          {skills.other.map((skill) => (
-            <div className="skill">
+          {skills.other.map((skill,index) => (
+            <div className="skill" key={index}>
               <div className="skill-name">{skill.name}</div>
               <SkillProgress progress={skill.per} />
             </div>
