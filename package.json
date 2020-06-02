@@ -47,9 +47,9 @@
   },
   "scripts": {
     "watch-sass": "node-sass src/App.scss build/css/style.css --watch",
-    "compile-sass": "node-sass src/App.scss build/css/style.css",
+    "compile-sass": "node-sass src/App.scss public/css/style.css",
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js && yarn compile-sass ",
+    "build": "yarn compile-sass && node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
   },
   "devDependencies": {
