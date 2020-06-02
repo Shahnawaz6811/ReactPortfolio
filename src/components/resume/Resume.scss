@@ -1,0 +1,408 @@
+#experience {
+  display: flex;
+  flex-direction: column;
+
+  // display: grid;
+  // grid-template-rows: auto auto auto;
+  background: white;
+  padding-top: 90px;
+  padding-bottom: 72px;
+  overflow: hidden;
+
+  a {
+    color: #11ABB0;
+
+    &:visited {
+      color: #11ABB0;
+    }
+
+    &:hover {
+      color: #313131;
+    }
+
+    &:focus {
+      color: #313131;
+    }
+  }
+
+  h1 {
+    font: 18px/24px 'opensans-bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+
+    span {
+      border-bottom: 3px solid #11ABB0;
+      padding-bottom: 6px;
+    }
+  }
+
+  h3 {
+    font: 25px/30px 'opensans-bold', sans-serif;
+  }
+
+
+  .info {
+    font: 16px/24px 'librebaskerville-italic', serif;
+    color: #6E7881;
+    margin-bottom: 18px;
+    margin-top: 9px;
+
+    span {
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  }
+
+  .date {
+    font: 15px/24px 'opensans-regular', sans-serif;
+    margin-top: 6px;
+  }
+
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    width: 60%;
+    margin: 30px auto;
+
+    h1 {
+      flex: 1.4;
+    }
+
+    .skills-bar {
+      flex: 3;
+      // background-color: lightblue;
+      // padding: 10px;
+    }
+  }
+
+
+  .education,
+  .work {
+    display: flex;
+    // background-color: lightblue;
+    width: 60%;
+
+    margin: 20px auto;
+    padding-bottom: 85px;
+    border-bottom: 1px solid #E8E8E8;
+
+    h1 {
+      flex: 1.4;
+      align-self: center;
+    }
+
+    .timeline {
+      flex: 3;
+      align-self: center;
+      margin-top: 30px;
+      padding: 10px;
+
+      li {
+        margin: 15px 0;
+
+        h5 {}
+
+        #duration {
+          margin-top: 8px;
+          font-size: 15px;
+        }
+
+        #description {
+          margin-top: 7px;
+          font-size: 16px;
+
+        }
+      }
+
+    }
+  }
+}
+
+
+
+
+.timeline {
+
+  #description {
+    margin-top: -15px;
+  }
+
+
+  #duration {
+    margin-top: 7px;
+    color: #5f5f79;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    padding-left: 100px;
+
+    &:before {
+      content: "";
+      width: 4px;
+      height: 100%;
+      padding-bottom: 30px;
+      background: #94a1a8;
+      position: absolute;
+      left: 70px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 68px;
+      z-index: 10;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #323A3E;
+    }
+  }
+
+  time {
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #F5F5F5;
+    background-color: #323A3E;
+    position: relative;
+    top: -4px;
+    left: -100px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: -10px;
+      display: inline-block;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid #323A3E;
+    }
+  }
+
+  h4 {
+    margin: 0;
+    margin-top: -22px;
+    margin-bottom: -10px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font: 17px/30px 'opensans-bold', sans-serif;
+  }
+
+}
+
+
+
+
+
+
+
+
+.bars {
+  width: 95%;
+  float: left;
+  padding: 0;
+  text-align: left;
+
+  .skills {
+    margin-top: 36px;
+    list-style: none;
+
+  }
+
+  li {
+    position: relative;
+    margin-bottom: 60px;
+    background: #ccc;
+    height: 42px;
+    border-radius: 3px;
+
+    em {
+      font: 15px 'opensans-bold', sans-serif;
+      color: #313131;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: normal;
+      position: relative;
+      top: -36px;
+    }
+  }
+}
+
+.bar-expand {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding-right: 24px;
+  background: #313131;
+  display: inline-block;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+
+/* mobile wide/smaller tablets
+---------------------------------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+
+
+  #experience {
+    width: 100%;
+
+    .skills {
+      width: 80%;
+      margin: 0 auto;
+      height: 100%;
+
+      display: block;
+      padding-top: 60px;
+      padding-bottom: 60px;
+
+      h1 {
+        margin-bottom: 50px;
+        text-align: center;
+        letter-spacing: 3px;
+      }
+    }
+
+    .skills-bar {
+      margin-top: 10px;
+    }
+
+    .work {
+      width: 85%;
+      margin: 0 auto;
+      display: flex;
+      padding-top: 40px;
+      flex-direction: column;
+
+      .timeline {
+        li {
+          #duration {
+            margin-top: 8px;
+            font-size: 13px;
+          }
+
+          #description {
+            margin-top: 7px;
+            font-size: 14px;
+
+          }
+        }
+
+      }
+    }
+
+    .education {
+      width: 82%;
+      flex-direction: column;
+
+      h3 {
+        font-size: 18px;
+      }
+    }
+  }
+
+
+
+  /* experience Section
+  --------------------------------------------------------------------- */
+  #experience h3,
+  #experience .info {
+    text-align: center;
+  }
+
+
+
+  .bars {
+    width: 100%;
+  }
+
+
+}
+
+
+
+.skill-name {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.skill-bar {
+  height: 20px;
+  background: #cacaca;
+  border-radius: 8px;
+}
+
+.skill-per {
+  height: 20px;
+  background-color: #f05a48;
+  border-radius: 8px;
+  width: 0;
+  position: relative;
+  transition: 1s linear;
+
+  &::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    top: -16px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+  }
+}
+
+
+
+/* screenwidth less than 900px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 900px) {
+
+
+  /* experience Section
+  ------------------------------------------------------------------- */
+  #experience h1 {
+    font: 16px/24px 'opensans-bold', sans-serif;
+  }
+
+
+}

@@ -1,0 +1,57 @@
+{
+  "frontend": [{
+      "name": "html5",
+      "per": "60"
+    },
+    {
+      "name": "css3",
+      "per": "50"
+    },
+    {
+      "name": "Javscript",
+      "per": "75"
+    },
+    {
+      "name": "ReactJS",
+      "per": "70"
+    },
+    {
+      "name": "VueJS",
+      "per": "65"
+    }
+
+  ],
+  "backend": [{
+      "name": "nodejs",
+      "per": "30"
+    },
+    {
+      "name": "expessjs",
+      "per": "30"
+    },
+    {
+      "name": "mongodb",
+      "per": "30"
+    },
+    {
+      "name": "php",
+      "per": "25"
+    },
+    {
+      "name": "mysql",
+      "per": "30"
+    }
+
+  ],
+  "other": [{
+      "name": "GraphQL",
+      "per": "30"
+    },
+    {
+      "name": "React Native",
+      "per": "65"
+    }
+  ]
+
+
+}

@@ -1,0 +1,21 @@
+[{
+    "title": "Gitmine",
+    "description": "A nicer look at your GitHub profile and repo stats Includes data visualizations of your top languages starred repositories and sort through your top repos by number of stars forks and size",
+    "tech": ["ReactJS", "GraphQL", "Github API"],
+    "link": "",
+    "image_src": "/images/gitmine.png"
+  }, {
+    "title": "Covid-19 Tracker",
+    "description": "A Progressive Web App to track the spread of the Coronavirus (COVID19) with a heatmap & informative statistics and graphs.",
+    "tech": ["ReactJS", "ChartJS", "MaterialUI", "Redux"],
+    "link": "",
+    "image_src": "/images/covid19.png"
+  },
+  {
+    "title": "Minimal Note",
+    "description": "Minimal note is a simple and awesome notepad app. It gives you a quick and simple notepad editing experience when you write notes, memos, messages. ",
+    "tech": ["ReactJS", "GraphQL", "Node", "MongoDB"],
+    "link": "",
+    "image_src": "/images/minimal-note.png"
+  }
+]

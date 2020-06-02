@@ -1,0 +1,166 @@
+/* ------------------------------------------------------------------ */
+/* c. About Section
+/* ------------------------------------------------------------------ */
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: #2B2B2B;
+  padding-top: 136px;
+  padding-bottom: 66px;
+  overflow: hidden;
+
+  a {
+    color: #fff;
+
+    &:visited {
+      color: #fff;
+    }
+
+    &:hover {
+      color: #11ABB0;
+    }
+
+    &:focus {
+      color: #11ABB0;
+    }
+  }
+
+  h2 {
+    font: 22px/30px 'opensans-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .wrapper {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .image-container {
+      flex: 0.6;
+      margin-left: 50px;
+      margin-top: 10px;
+    }
+
+  }
+
+  .bio {
+    display: flex;
+    flex: 1.5;
+    flex-direction: column;
+    padding: 30px;
+    padding-bottom: 50px;
+
+    p {
+      line-height: 30px;
+      color: #7A7A7A;
+      font: 18px/30px 'opensans-bold', sans-serif;
+
+    }
+  }
+
+  .profile-pic {
+    width: 130px;
+    height: 130px;
+    align-self: center;
+    border-radius: 150px;
+    margin: 25px 0;
+
+  }
+
+  // .download {
+  //   width: 58.33333%;
+  //   padding-top: 6px;
+
+  //   .button {
+  //     margin-top: 6px;
+  //     background: #444;
+
+  //     &:hover {
+  //       background: #fff;
+  //       color: #2B2B2B;
+  //     }
+
+  //     i {
+  //       margin-right: 15px;
+  //       font-size: 20px;
+  //     }
+  //   }
+  // }
+
+
+
+}
+
+
+
+@media only screen and (max-width: 900px) {
+
+
+  /* About Section
+  ------------------------------------------------------------------- */
+
+  // #about {
+  //   padding: 5px 0px;
+  //   flex-direction: column;
+
+  // }
+
+  // .download {
+  //   margin-left: 70px;
+  //   margin-top: 50px;
+  // }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+
+  /* About Section
+  -------------------------------------------------------------------- */
+  #about {
+    height: 100vh;
+
+    padding-top: 30px;
+
+    .wrapper {
+      flex-direction: column;
+      width: 90%;
+      margin: 0 auto;
+
+      .image-container {
+        align-self: center;
+        margin-top: 20px;
+        margin-left: 0px;
+
+
+        .profile-pic {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+        }
+      }
+
+    }
+
+
+
+    .download {
+      .button {
+        width: 100%;
+        text-align: center;
+        padding: 15px 20px;
+      }
+    }
+  }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+  #about {}
+}
