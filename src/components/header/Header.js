@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Header.scss";
+// import "./Header.scss";
 const Header = ({ socials = [] }) => {
   const [isNavOpen, setNavOpen] = useState(false);
   const name = useState("Shahnawaz")[0];

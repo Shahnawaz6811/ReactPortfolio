@@ -1,8 +1,7 @@
 import React from "react";
-import "./Portfolio.scss";
+// import "./Portfolio.scss";
 const projects = require("../../data/portfolio.json");
-// console.log(projects);
-const Portfolio = () => {
+ const Portfolio = () => {
   return (
     <section id="works">
       <h1>Something i have built.</h1>

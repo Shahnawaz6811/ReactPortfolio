@@ -1,6 +1,6 @@
 import React from "react";
 import SkillsTabs from "../portfolio/SkillsTab";
-import "./Resume.scss";
+// import "./Resume.scss";
 const Resume = (props) => {
 
 
