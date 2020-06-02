@@ -34,7 +34,7 @@ const socials = [
 
 const App = () => {
   React.useEffect(() => {
-    ReactGA.initialize("UA-110570651-1", {
+    ReactGA.initialize("UA-156487728-2", {
       titleCase: false,
       gaOptions: {
         siteSpeedSampleRate: 100,
