@@ -34,7 +34,7 @@
     "raf": "3.4.0",
     "react": "^16.2.0",
     "react-animated-progress-bar": "^1.0.4",
-    "react-dev-utils": "^4.2.1",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.2.0",
     "react-ga": "^2.3.5",
     "react-tabs": "^3.1.1",
